@@ -16,7 +16,7 @@ public class Hero {
         System.out.println("50のダメージ!");
     }
     public void run(){
-        System.out.println(this.name+"は、逃げ出した!");
+        System.out.println(this.name+"は、HPが半分になったため逃げ出した!");
         System.out.println("GAMEOVER");
         System.out.println("最終HPは"+this.hp+"でした");
     }
