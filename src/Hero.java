@@ -1,6 +1,19 @@
 public class Hero {
     String name;
     int hp;
+    Sword sword;
+    public Hero(String name){
+        this.hp = 100;
+        this.name = name;
+
+    }
+    public Hero(){
+        this("ダミー");
+    }
+    public void attack(){
+        System.out.println(this.name+"は攻撃した!");
+        System.out.println("敵に5ポイントのダメージを与えた!");
+    }
     public void sleep(){
     this.hp =100;
     System.out.println(this.name +"は、眠って回復した。");
