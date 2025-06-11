@@ -2,14 +2,20 @@
 // ガターの <icon src="AllIcons.Actions.Execute"/> アイコンをクリックします。
 public class Main {
     public static void main(String[] args){
-        Hero h = new Hero("minato");
-    //    h1.name ="ミナト";
-   //     h1.hp = 100;
-        System.out.println(h.hp);
-        System.out.println(h.name);
-        Hero h2 = new Hero();
-        System.out.println(h2.hp);
-        System.out.println(h2.name);
+                // 引数なし
+                Hero h = new Hero();//同じ名前
+                System.out.println(h.name + "のHPは" + h.hp + "です");
+                // 引数あり String
+                Hero h1 = new Hero("ミナト");//同じ名前
+                System.out.println(h1.name + "のHPは" + h1.hp + "です");
+                // 引数あり int
+                Hero h2 = new Hero(999);//同じ名前
+                System.out.println(h2.name + "のHPは" + h2.hp + "です");
+                // 引数2つ
+                Hero h3 = new Hero(999, "ミナト");//同じ名前
+                System.out.println(h3.name + "のHPは" + h3.hp + "です");
+            }
+        }
    //     h2.name ="アサカ";
         //h2.hp = 100;
   /*      Wizard w = new Wizard();
@@ -34,5 +40,4 @@ public class Main {
         h.run();
 */
 
-    }
-}
+
